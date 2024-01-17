@@ -375,6 +375,148 @@ a{
         line-height: normal;
         margin-bottom: 16px;
 }
+/* footer before section */
+.news{
+    width: 82%;
+    margin-left: 9.2%;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.kkk{
+    display: flex;
+    gap: 2px;
+    justify-content: space-evenly;
+}
+                .aa {
+                    color: #131318;
+                    font-family: Mulish;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    padding-top: 40px;
+                    padding-bottom: 16px;
+                }
+        
+                .bb {
+                    color: #5A5A5D;
+                    width: 350px;
+                    font-family: Mulish;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    margin-top: 16px;
+                    margin-bottom: 8px;
+                    /* 162.5% */
+        
+                }
+        
+                .cc {
+                    display: grid;
+                    grid-template-columns: (1, 1fr);
+                    gap: 20px;
+                }
+                input{
+                    width: 393px;
+                    height: 52px;
+                    border-radius: 8px;
+                    padding-left: 10px;
+                    background: rgba(19, 19, 24, 0.05);
+                    outline: none;
+                    border: none;
+                       
+                }
+            
+                .dd {
+                    width: 393px;
+                    height: 52px;
+                    border-radius: 8px;
+                        background: #FF5400;
+                        outline: none;
+                        border: none;
+                        color: white;
+                    
+                        padding: 10px;
+                    
+                        cursor: pointer;
+                        font-size: 20px;
+                        font-weight: 800;
+                        margin-bottom: 24px;
+                }
+/* footer */
+   footer {
+       width: 100%;
+       height: 502px;
+       flex-shrink: 0;
+       background: rgba(19, 19, 24, 0.05);
+       text-align: center;
+       margin-top: 40px;
+       margin: 0px auto;
+
+   }
+
+   .hero {
+       color: #FF5400;
+       font-family: Mulish;
+       font-size: 32px;
+       font-style: normal;
+       font-weight: 800;
+       line-height: normal;
+
+   }
+
+   span {
+       color: var(--Dark-01, #131318);
+       font-family: Mulish;
+       font-size: 32px;
+       font-style: normal;
+       font-weight: 800;
+       line-height: normal;
+   }
+
+   .lorem {
+       color: #5A5A5D;
+       width: 769px;
+       text-align: center;
+       font-family: Mulish;
+       font-size: 16px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 26px;
+       /* 162.5% */
+       padding-left: 300px;
+
+   }
+
+   .all {
+       color: #131318;
+       font-family: Inter;
+       font-size: 16px;
+       font-style: normal;
+       font-weight: 300;
+       line-height: normal;
+       padding-top: 100px;
+
+   }
+
+   .bah {
+       padding-top: 200px;
+   }
+   .na{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding-left: 35%;
+    margin-bottom: 24px;
+    
+   }
+   .lost{
+    display: flex;
+    margin-left: 9.2%;
+    margin-right: 9.2%;
+   }
+   
 
 @media screen and (max-width: 600px) {
     header{
@@ -624,4 +766,47 @@ a{
          .card3{
             transform: translate(0%,0%);
          }
+
+    .lost{
+        flex-direction: column;
+        position: relative;
+        transform: translate(0%,97%);
+        gap:20px;
+    
+    }
+    .news{
+        flex-direction: column;
+            position: relative;
+            transform: translate(0%, 107%);
+            gap: 20px;
+            margin-bottom: 22px;
+    }
+    .kkk{
+        flex-direction: column;
+    }
+    footer{
+         margin-top: 48px;
+            width: 82%;
+            position: relative;
+            transform: translate(0%, 112%);
+            margin-left: 9.2%;
+            margin-right: 9.2%;
+    }
+    .lorem,.na{
+        padding-left: 0px;
+        width:82%
+    }
+    .i,input,.dd{
+        width: 100%;
+    }
+    .bah{
+        padding-top: 20%;
+    }
+    .lorem{
+        margin-left: 9.2%;
+    }
+    .na{
+        padding-left: 10%;
+    }
+
 }
