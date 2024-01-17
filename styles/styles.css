@@ -317,25 +317,26 @@ a{
 .why-us{
     text-align: center;
     width: 100%;
-    /* margin-left: 9.2%; */
     margin-right: 9.2%;
-    /* position: relative;
-    transform: translate(0%,-230%); */
+    margin-bottom: 60px;
 }
 .p1{
     margin-top: 24px;
     margin-bottom: 48px;
 }
 .card{
-    display:flex;
-    gap: 16px;
+    display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 16px;
+        text-align: center;
+        justify-content: center;
+        margin-left: 9.2%;
+        margin-right: 9.2%;
 }
 
 .card1{
     justify-content: left;
     text-align: left;
-    width: 573px;
-    height: 200px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(39, 25, 8, 0.05);
@@ -344,8 +345,6 @@ a{
     padding: 32px;
 }
 .card2{
-    width: 573px;
-    height:200px;
     border-radius: 16px;
         border: 1px solid rgba(41, 206, 246, 0.20);
         background: rgba(41, 206, 246, 0.05);
@@ -353,15 +352,13 @@ a{
         padding: 32px;
 }
 .card3{
-    width: 573px;
-    height: 284px;
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
     text-align: left;
-    padding: 32px;
+    padding: 16px;
     position: relative;
-    transform: translate(77%,5%);
+    transform: translate(60%,5%);
 }
 .card1>img,.card2>img,.card3>img{
     height: 64px;
@@ -384,9 +381,14 @@ a{
         margin-top: 0;
         margin-bottom: 0;
     }
-    ul{
-        display: none;
-    }
+   nav{
+    flex-direction: column;
+    gap: 10px;
+   }
+   ul{
+    /* flex-direction: column; */
+    gap:10px;
+   }
     .name>img{
         width: 28.724px;
         height: 33.516px;
@@ -566,4 +568,60 @@ a{
             font-weight: 800;
             line-height: normal;
      }
+     .destination-img{
+        position: none;
+     }
+
+         .kashmir {
+             position: relative;
+             transform: translate(33%, 3049%);
+         }
+    
+         .maldives {
+             position: relative;
+             transform: translate(21%, 910%);
+         }
+    
+         .indoneshia {
+             position: relative;
+             transform: translate(25%, 1446%);
+         }
+    
+         .sri-lanka {
+             position: relative;
+             transform: translate(32%, 1932%);
+         }
+    
+         .North-America {
+             position: relative;
+             transform: translate(34%, 2496%);
+         }
+    
+         .Bangladesh {
+             position: relative;
+             transform: translate(32%, 3610%);
+         }
+    
+         .Bandarban {
+             position: relative;
+             transform: translate(33%, 4082%);
+         }
+         .destination-context{
+            padding-left: 50px;
+            text-align: left;
+         }
+         .why-us{
+            position: relative;
+            transform: translate(0%,60%);
+            /* justify-content: center; */
+         }
+         .context-why{
+            justify-content: center;
+         }
+         .card{
+            grid-template-columns: auto;
+         }
+         .card3{
+            transform: translate(0%,0%);
+         }
 }
